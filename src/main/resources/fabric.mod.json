@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "admintools",
+  "version": "${version}",
+  "name": "AdminTools",
+  "description": "Performance Oriented Minecraft Staff Mod",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/admintools/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "admintools.AdminTools"
+    ]
+  },
+  "mixins": [
+    "admintools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
