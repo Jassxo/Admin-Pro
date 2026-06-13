@@ -31,7 +31,7 @@ public abstract class PlayerEntityRendererMixin extends LivingEntityRenderer<Abs
             double d = this.dispatcher.getSquaredDistanceToCamera(player);
             if (d <= 4096.0D) { // Only render if within 64 blocks
                 boolean bl = !player.isSneaking();
-                float f = player.getNameLabelHeight() + 0.3F; // Render above the normal nametag
+                float f = player.getHeight() + 0.5F + 0.3F; // Render above the normal nametag
                 matrices.push();
                 matrices.translate(0.0F, f, 0.0F);
                 matrices.multiply(this.dispatcher.getRotation());
