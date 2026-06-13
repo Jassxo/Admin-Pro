@@ -11,14 +11,6 @@ base {
 }
 
 loom {
-    splitEnvironmentSourceSets()
-
-    mods {
-        "admin_pro" {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
-    }
 }
 
 fabricApi {
